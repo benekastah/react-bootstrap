@@ -376,7 +376,7 @@ const Modal = React.createClass({
   },
 
   restoreLastFocus () {
-    if (this.lastFocus) {
+    if (this.lastFocus && this.lastFocus.focus) {
       this.lastFocus.focus();
       this.lastFocus = null;
     }
